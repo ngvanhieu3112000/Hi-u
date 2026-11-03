@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xí nghiệp Kinh doanh Nước sạch Hoàng Mai</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #17a2b8;
+            --accent-color: #ffc107;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: var(--text-color); line-height: 1.6; }
+        
+        /* Header & Navigation */
+        header { background: #fff; border-bottom: 3px solid var(--primary-color); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        .logo-icon { width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; }
+        .brand-name h1 { font-size: 1.4rem; color: var(--primary-color); text-transform: uppercase; }
+        .brand-name p { font-size: 0.85rem; color: #666; font-weight: 600; }
+        
+        nav { background: var(--primary-color); display: flex; padding: 0 5%; list-style: none; overflow-x: auto; }
+        nav a { color: white; padding: 12px 20px; text-decoration: none; font-weight: 600; font-size: 0.95rem; white-space: nowrap; transition: 0.3s; }
+        nav a:hover, nav a.active { background: #004085; background-color: var(--secondary-color); }
+
+        /* Banner */
+        .banner { background: linear-gradient(135deg, #0056b3 0%, #00a4ff 100%); color: white; padding: 60px 5%; text-align: center; }
+        .banner h2 { font-size: 2.2rem; margin-bottom: 10px; }
+        .banner p { font-size: 1.1rem; opacity: 0.9; }
+
+        /* Quick Services Grid */
+        .services-section { padding: 40px 5%; text-align: center; background: #fff; }
+        .section-title { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 30px; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background: var(--secondary-color); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .service-card { background: var(--light-bg); border: 1px solid #eee; border-radius: 8px; padding: 25px 15px; text-decoration: none; color: var(--text-color); font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; align-items: center; gap: 15px; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: var(--primary-color); }
+        .service-icon { font-size: 2.5rem; color: var(--primary-color); }
+
+        /* Info Dashboard & News */
+        .main-container { padding: 40px 5%; display: flex; flex-wrap: wrap; gap: 30px; background: var(--light-bg); }
+        .news-block { flex: 2; min-width: 300px; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .sidebar { flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px; }
+        .sidebar-widget { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid var(--secondary-color); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .sidebar-widget h3 { color: var(--primary-color); margin-bottom: 15px; font-size: 1.1rem; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        
+        .news-item { padding: 15px 0; border-bottom: 1px dashed #eee; }
+        .news-item:last-child { border: none; }
+        .news-item a { color: var(--text-color); text-decoration: none; font-weight: 600; font-size: 1rem; }
+        .news-item a:hover { color: var(--primary-color); }
+        .news-date { font-size: 0.8rem; color: #888; margin-top: 5px; }
+
+        /* Footer */
+        footer { background: #222; color: #ccc; padding: 40px 5%; font-size: 0.9rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 15px; text-transform: uppercase; font-size: 1rem; }
+        .footer-col p { margin-bottom: 10px; }
+        .footer-bottom { border-top: 1px solid #444; padding-top: 20px; text-align: center; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">💧</div>
+            <div class="brand-name">
+                <h1>XÍ NGHIỆP KINH DOANH NƯỚC SẠCH HOÀNG MAI</h1>
+                <p>THÀNH VIÊN CỦA CÔNG TY TNHH MTV NƯỚC SẠCH HÀ NỘI - HAWACOM</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu điều hướng -->
+    <nav>
+        <a href="#" class="active">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Dịch vụ khách hàng</a>
+        <a href="#">Lịch tạm ngừng cấp nước</a>
+        <a href="#">Tin tức & Sự kiện</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+
+    <!-- Banner chào mừng -->
+    <div class="banner">
+        <h2>Hệ Thống Cấp Nước Sạch Quận Hoàng Mai</h2>
+        <p>An toàn - Ổn định - Chất lượng vì sự phát triển bền vững của Thủ đô</p>
+    </div>
+
+    <!-- Khu vực Dịch vụ công trực tuyến nhanh -->
+    <section class="services-section">
+        <h3 class="section-title">Dịch vụ trực tuyến nhanh</h3>
+        <div class="services-grid">
+            <a href="#" class="service-card">
+                <span class="service-icon">🔍</span>
+                <span>Tra cứu Chỉ số & Hóa đơn</span>
+            </a>
+            <a href="#" class="service-card">
+                <span class="service-icon">📝</span>
+                <span>Ký kết Hợp đồng Điện tử</span>
+            </a>
+            <a href="#" class="service-card">
+                <span class="service-icon">⏳</span>
+                <span>Lịch tạm ngừng cấp nước</span>
+            </a>
+            <a href="#" class="service-card">
+                <span class="service-icon">🛠️</span>
+                <span>Đăng ký Lắp đặt Đồng hồ</span>
+            </a>
+            <a href="#" class="service-card">
+                <span class="service-icon">🔀</span>
+                <span>Thay đổi thông tin sử dụng</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Nội dung chính và Sidebar thông báo -->
+    <div class="main-container">
+        <!-- Tin tức sản xuất kinh doanh -->
+        <div class="news-block">
+            <h3 class="section-title" style="text-align: left; font-size: 1.5rem;">Tin tức hoạt động</h3>
+            <div class="news-item">
+                <a href="#">Xí nghiệp NS Hoàng Mai phối hợp kiểm tra chất lượng nguồn nước định kỳ tại các trạm cấp nước Nam Dư, Pháp Vân</a>
+                <div class="news-date">Cập nhật: 03/11/2026</div>
+            </div>
+            <div class="news-item">
+                <a href="#">Đẩy mạnh tiến độ chuyển đổi số và ký kết Hợp đồng mua bán nước điện tử trên địa bàn Quận Hoàng Mai</a>
+                <div class="news-date">Cập nhật: 28/10/2026</div>
+            </div>
+            <div class="news-item">
+                <a href="#">Ứng dụng công nghệ sục rửa đường ống thế hệ mới bảo đảm dòng nước an toàn phục vụ người dân phía Nam Thủ đô</a>
+                <div class="news-date">Cập nhật: 15/10/2026</div>
+            </div>
+        </div>
+
+        <!-- Cột thông tin nhanh phía phải -->
+        <div class="sidebar">
+            <div class="sidebar-widget">
+                <h3>☎️ Đường dây nóng 24/7</h3>
+                <p style="font-size: 1.3rem; color: red; font-weight: bold; text-align: center; margin: 10px 0;">1900 4600</p>
+                <p style="font-size: 0.85rem; text-align: center; color: #666;">Số máy bàn văn phòng trực tiếp: 024.3681.6205</p>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>📢 Thông báo khẩn</h3>
+                <p style="font-size: 0.9rem; color: #555;">Hiện tại hệ thống cấp nước từ Nhà máy nước Nam Dư và Tương Mai đang vận hành ổn định, áp lực tuyến ống truyền dẫn đảm bảo 100% công suất.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chân trang cung cấp thông tin liên hệ xí nghiệp -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>XN KDNS HOÀNG MAI</h4>
+                <p>Chịu trách nhiệm quản lý cung cấp nước sạch sinh hoạt và dịch vụ trên địa bàn quận Hoàng Mai và một phần huyện Thanh Trì.</p>
+                <p>Địa bàn quản lý: Các phường Tương Mai, Vĩnh Hưng, Định Công, Lĩnh Nam, Yên Sở, Hoàng Liệt, Đại Kim...</p>
+            </div>
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p>📍 <b>Địa chỉ:</b> Số 1 Trần Thủ Độ, Phường Hoàng Liệt, Quận Hoàng Mai, TP. Hà Nội</p>
+                <p>📞 <b>Điện thoại:</b> 024 3681 6205 - 1900 4600</p>
+                <p>🌐 <b>Đơn vị chủ quản:</b> <a href="https://hawacom.vn" style="color: #17a2b8; text-decoration: none;">HAWACOM</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bản quyền thuộc về Xí nghiệp Kinh doanh Nước sạch Hoàng Mai. Thiết kế theo cấu trúc Cổng thông tin điện tử Hawacom.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
